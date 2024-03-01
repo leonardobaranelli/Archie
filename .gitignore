@@ -1,0 +1,19 @@
+# Build files
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Go generated folders
+/bin/
+/vendor/
+
+# Environment file
+.env
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
