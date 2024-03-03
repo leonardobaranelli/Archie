@@ -1,6 +1,6 @@
-module rest_api
+module github.com/leonardobaranelli/rest-api-backend-app
 
-go 1.22.0
+go 1.19
 
 require (
 	github.com/andybalholm/brotli v1.1.0 // indirect

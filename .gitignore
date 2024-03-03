@@ -8,6 +8,7 @@
 # Go generated folders
 /bin/
 /vendor/
+/tmp/
 
 # Environment file
 .env
