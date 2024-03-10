@@ -2,6 +2,7 @@ package main
 
 import (
 	"log"
+	"os"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/leonardobaranelli/rest-api-backend-app/database"
@@ -13,7 +14,12 @@ func main() {
 
 	setupRoutes(app)
 
-	err := app.Listen(":3000")
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "3000"
+	}
+
+	err := app.Listen(":" + port)
 	if err != nil {
 		log.Fatalf("Error starting the server: %s", err)
 	}
