@@ -1,0 +1,14 @@
+{
+    "version": 2,
+    "routes": [
+        {
+        "src": "/fact/(.*)",
+        "dest": "/cmd/main.go"
+        },
+        {
+        "src": "/(.*)",
+        "dest": "/cmd/main.go"
+        }
+    ]
+}
+  
